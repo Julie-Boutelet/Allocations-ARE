@@ -1,7 +1,8 @@
 
 def ARE(nbr_mois):
     salaire_total = 0
-    for i in range(nbr_mois) :
+    for i in range(1,nbr_mois+1) :
+        print(f'Sasir le {i}°salaire')
         salaire_mois=float(input())
         salaire_total += salaire_mois
     jours_calendaires=365*(nbr_mois/12)
@@ -18,7 +19,6 @@ def ARE(nbr_mois):
         ARE=30*SJR
         print('Ton salaire journalier est de' ,round(SJR2),'euros')
         print('Ton allocation ARE est de', round(ARE),'euros')
-
 
 
 nbr_mois= int(input('Nombre de mois travaillés:'))
